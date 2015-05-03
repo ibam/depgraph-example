@@ -1,0 +1,13 @@
+digraph "cglib
+cglib" {
+	size="8,5"
+	node [shape = box, color = tomato]; "cglib
+cglib";
+	node [shape = box];
+	"org.apache.commons
+commons-digester3" -> "cglib
+cglib" [ label = "2.2.2" ];
+	"org.apache.commons
+commons-pool2" -> "cglib
+cglib" [ label = "3.1" ];
+}

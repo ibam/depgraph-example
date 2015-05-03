@@ -1,0 +1,10 @@
+digraph "commons-codec
+commons-codec" {
+	size="8,5"
+	node [shape = box, color = tomato]; "commons-codec
+commons-codec";
+	node [shape = box];
+	"org.apache.commons
+commons-proxy" -> "commons-codec
+commons-codec" [ label = "1.3" ];
+}

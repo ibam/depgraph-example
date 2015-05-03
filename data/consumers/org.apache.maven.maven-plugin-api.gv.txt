@@ -1,0 +1,10 @@
+digraph "org.apache.maven
+maven-plugin-api" {
+	size="8,5"
+	node [shape = box, color = tomato]; "org.apache.maven
+maven-plugin-api";
+	node [shape = box];
+	"org.apache.commons
+commons-weaver-maven-plugin" -> "org.apache.maven
+maven-plugin-api" [ label = "3.0.4" ];
+}

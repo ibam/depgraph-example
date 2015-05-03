@@ -1,0 +1,16 @@
+digraph "commons-httpclient
+commons-httpclient" {
+	size="8,5"
+	node [shape = box, color = tomato]; "commons-httpclient
+commons-httpclient";
+	node [shape = box];
+	"org.apache.commons
+commons-jcs-core" -> "commons-httpclient
+commons-httpclient" [ label = "3.1" ];
+	"org.apache.commons
+commons-vfs2" -> "commons-httpclient
+commons-httpclient" [ label = "3.1" ];
+	"org.apache.commons
+commons-vfs2-examples" -> "commons-httpclient
+commons-httpclient" [ label = "3.1" ];
+}

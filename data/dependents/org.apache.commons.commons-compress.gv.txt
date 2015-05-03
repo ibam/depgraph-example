@@ -1,0 +1,10 @@
+digraph "org.apache.commons
+commons-compress" {
+	size="8,5"
+	node [shape = box, color = tomato]; "org.apache.commons
+commons-compress";
+	node [shape = box];
+	"org.apache.commons
+commons-compress" -> "org.tukaani
+xz" [ label = "1.5", length = 53.46573590279973 ];
+}

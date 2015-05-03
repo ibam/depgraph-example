@@ -1,0 +1,10 @@
+digraph "xmlrpc
+xmlrpc" {
+	size="8,5"
+	node [shape = box, color = tomato]; "xmlrpc
+xmlrpc";
+	node [shape = box];
+	"org.apache.commons
+commons-proxy" -> "xmlrpc
+xmlrpc" [ label = "2.0" ];
+}

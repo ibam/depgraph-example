@@ -1,0 +1,10 @@
+digraph "javax.cache
+test-domain" {
+	size="8,5"
+	node [shape = box, color = tomato]; "javax.cache
+test-domain";
+	node [shape = box];
+	"org.apache.commons
+commons-jcs-jcache-tck" -> "javax.cache
+test-domain" [ label = "1.0.0" ];
+}

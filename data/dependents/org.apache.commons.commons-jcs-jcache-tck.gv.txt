@@ -1,0 +1,40 @@
+digraph "org.apache.commons
+commons-jcs-jcache-tck" {
+	size="8,5"
+	node [shape = box, color = tomato]; "org.apache.commons
+commons-jcs-jcache-tck";
+	node [shape = box];
+	"org.apache.commons
+commons-jcs-jcache-tck" -> "org.apache.openwebbeans
+openwebbeans-impl" [ label = "1.2.6", length = 63.19528664807629 ];
+	"org.apache.commons
+commons-jcs-jcache-tck" -> "org.apache.geronimo.specs
+geronimo-jcdi_1.0_spec" [ label = "1.0", length = 63.54025100551105 ];
+	"org.apache.commons
+commons-jcs-jcache-tck" -> "javax.cache
+cache-tests" [ label = "1.0.0", length = 62.82474678730768 ];
+	"org.apache.commons
+commons-jcs-jcache-tck" -> "javax.transaction
+jta" [ label = "1.1", length = 62.82474678730768 ];
+	"org.apache.commons
+commons-jcs-jcache-tck" -> "org.apache.geronimo.specs
+geronimo-jcache_1.0_spec" [ label = "1.0-alpha-1", length = 63.86294361119891 ];
+	"org.apache.commons
+commons-jcs-jcache-tck" -> "org.apache.geronimo.specs
+geronimo-atinject_1.0_spec" [ label = "1.0", length = 63.54025100551105 ];
+	"org.apache.commons
+commons-jcs-jcache-tck" -> "${project.groupId}
+commons-jcs-jcache" [ label = "2.0-beta-1", length = 62.82474678730768 ];
+	"org.apache.commons
+commons-jcs-jcache-tck" -> "javax.cache
+test-domain" [ label = "1.0.0", length = 62.82474678730768 ];
+	"org.apache.commons
+commons-jcs-jcache-tck" -> "org.apache.geronimo.specs
+geronimo-interceptor_1.1_spec" [ label = "1.0", length = 63.54025100551105 ];
+	"org.apache.commons
+commons-jcs-jcache-tck" -> "${project.groupId}
+commons-jcs-core" [ label = "2.0-beta-1", length = 62.82474678730768 ];
+	"org.apache.commons
+commons-jcs-jcache-tck" -> "javax.cache
+app-domain" [ label = "1.0.0", length = 62.82474678730768 ];
+}

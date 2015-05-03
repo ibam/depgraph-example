@@ -1,0 +1,10 @@
+digraph "org.apache.commons
+commons-jci-fam" {
+	size="8,5"
+	node [shape = box, color = tomato]; "org.apache.commons
+commons-jci-fam";
+	node [shape = box];
+	"org.apache.commons
+commons-jci-fam" -> "commons-logging
+commons-logging" [ label = "1.1.3", length = 61.51292546497023 ];
+}

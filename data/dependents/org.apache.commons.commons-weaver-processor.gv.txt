@@ -1,0 +1,13 @@
+digraph "org.apache.commons
+commons-weaver-processor" {
+	size="8,5"
+	node [shape = box, color = tomato]; "org.apache.commons
+commons-weaver-processor";
+	node [shape = box];
+	"org.apache.commons
+commons-weaver-processor" -> "org.apache.commons
+commons-lang3" [ label = "3.2.1", length = 59.72955074527657 ];
+	"org.apache.commons
+commons-weaver-processor" -> "org.apache.xbean
+xbean-finder-shaded" [ label = "3.18", length = 56.93147180559945 ];
+}

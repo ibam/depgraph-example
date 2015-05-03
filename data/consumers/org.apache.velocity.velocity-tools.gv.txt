@@ -1,0 +1,10 @@
+digraph "org.apache.velocity
+velocity-tools" {
+	size="8,5"
+	node [shape = box, color = tomato]; "org.apache.velocity
+velocity-tools";
+	node [shape = box];
+	"org.apache.commons
+commons-jcs-core" -> "org.apache.velocity
+velocity-tools" [ label = "2.0" ];
+}

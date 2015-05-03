@@ -1,0 +1,10 @@
+digraph "junit
+junit" {
+	size="8,5"
+	node [shape = box, color = tomato]; "junit
+junit";
+	node [shape = box];
+	"org.apache.commons
+commons-jcs-jcache-extras" -> "junit
+junit" [ label = "4.11" ];
+}

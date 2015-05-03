@@ -1,0 +1,16 @@
+digraph "org.apache.commons
+commons-digester3" {
+	size="8,5"
+	node [shape = box, color = tomato]; "org.apache.commons
+commons-digester3";
+	node [shape = box];
+	"org.apache.commons
+commons-digester3" -> "commons-logging
+commons-logging" [ label = "1.1.1", length = 61.989476363991855 ];
+	"org.apache.commons
+commons-digester3" -> "commons-beanutils
+commons-beanutils" [ label = "1.8.3", length = 56.93147180559945 ];
+	"org.apache.commons
+commons-digester3" -> "cglib
+cglib" [ label = "2.2.2", length = 58.0471895621705 ];
+}

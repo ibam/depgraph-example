@@ -1,0 +1,10 @@
+digraph "org.apache.commons
+commons-jci-eclipse" {
+	size="8,5"
+	node [shape = box, color = tomato]; "org.apache.commons
+commons-jci-eclipse";
+	node [shape = box];
+	"org.apache.commons
+commons-jci-examples" -> "org.apache.commons
+commons-jci-eclipse" [ label = "1.0" ];
+}

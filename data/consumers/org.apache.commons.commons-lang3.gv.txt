@@ -1,0 +1,19 @@
+digraph "org.apache.commons
+commons-lang3" {
+	size="8,5"
+	node [shape = box, color = tomato]; "org.apache.commons
+commons-lang3";
+	node [shape = box];
+	"org.apache.commons
+commons-weaver-normalizer-example" -> "org.apache.commons
+commons-lang3" [ label = "3.2.1" ];
+	"org.apache.commons
+commons-weaver-example" -> "org.apache.commons
+commons-lang3" [ label = "3.2.1" ];
+	"org.apache.commons
+commons-weaver-processor" -> "org.apache.commons
+commons-lang3" [ label = "3.2.1" ];
+	"org.apache.commons
+commons-jcs-jcache" -> "org.apache.commons
+commons-lang3" [ label = "3.3.2" ];
+}

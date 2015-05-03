@@ -1,0 +1,10 @@
+digraph "commons-dbcp
+commons-dbcp" {
+	size="8,5"
+	node [shape = box, color = tomato]; "commons-dbcp
+commons-dbcp";
+	node [shape = box];
+	"org.apache.commons
+commons-jcs-core" -> "commons-dbcp
+commons-dbcp" [ label = "1.4" ];
+}

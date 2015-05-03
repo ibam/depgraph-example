@@ -1,0 +1,10 @@
+digraph "org.apache.bsf
+bsf-api" {
+	size="8,5"
+	node [shape = box, color = tomato]; "org.apache.bsf
+bsf-api";
+	node [shape = box];
+	"org.apache.commons
+commons-jexl" -> "org.apache.bsf
+bsf-api" [ label = "3.1" ];
+}

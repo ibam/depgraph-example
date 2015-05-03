@@ -1,0 +1,10 @@
+digraph "commons-pool
+commons-pool" {
+	size="8,5"
+	node [shape = box, color = tomato]; "commons-pool
+commons-pool";
+	node [shape = box];
+	"org.apache.commons
+commons-jcs-core" -> "commons-pool
+commons-pool" [ label = "1.6" ];
+}

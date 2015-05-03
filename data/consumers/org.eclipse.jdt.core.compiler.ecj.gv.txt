@@ -1,0 +1,10 @@
+digraph "org.eclipse.jdt.core.compiler
+ecj" {
+	size="8,5"
+	node [shape = box, color = tomato]; "org.eclipse.jdt.core.compiler
+ecj";
+	node [shape = box];
+	"org.apache.commons
+commons-jci-eclipse" -> "org.eclipse.jdt.core.compiler
+ecj" [ label = "4.2.2" ];
+}

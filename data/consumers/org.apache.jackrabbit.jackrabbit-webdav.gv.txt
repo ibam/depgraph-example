@@ -1,0 +1,10 @@
+digraph "org.apache.jackrabbit
+jackrabbit-webdav" {
+	size="8,5"
+	node [shape = box, color = tomato]; "org.apache.jackrabbit
+jackrabbit-webdav";
+	node [shape = box];
+	"org.apache.commons
+commons-vfs2" -> "org.apache.jackrabbit
+jackrabbit-webdav" [ label = "1.5.2" ];
+}

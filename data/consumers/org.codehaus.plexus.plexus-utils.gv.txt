@@ -1,0 +1,10 @@
+digraph "org.codehaus.plexus
+plexus-utils" {
+	size="8,5"
+	node [shape = box, color = tomato]; "org.codehaus.plexus
+plexus-utils";
+	node [shape = box];
+	"org.apache.commons
+commons-weaver-maven-plugin" -> "org.codehaus.plexus
+plexus-utils" [ label = "2.0.6" ];
+}

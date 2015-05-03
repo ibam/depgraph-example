@@ -1,0 +1,10 @@
+digraph "commons-beanutils
+commons-beanutils" {
+	size="8,5"
+	node [shape = box, color = tomato]; "commons-beanutils
+commons-beanutils";
+	node [shape = box];
+	"org.apache.commons
+commons-digester3" -> "commons-beanutils
+commons-beanutils" [ label = "1.8.3" ];
+}

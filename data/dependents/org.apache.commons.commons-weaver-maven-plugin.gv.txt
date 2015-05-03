@@ -1,0 +1,22 @@
+digraph "org.apache.commons
+commons-weaver-maven-plugin" {
+	size="8,5"
+	node [shape = box, color = tomato]; "org.apache.commons
+commons-weaver-maven-plugin";
+	node [shape = box];
+	"org.apache.commons
+commons-weaver-maven-plugin" -> "org.apache.maven.plugin-tools
+maven-plugin-annotations" [ label = "3.1", length = 58.95879734614027 ];
+	"org.apache.commons
+commons-weaver-maven-plugin" -> "org.codehaus.plexus
+plexus-utils" [ label = "2.0.6", length = 58.95879734614027 ];
+	"org.apache.commons
+commons-weaver-maven-plugin" -> "org.apache.maven
+maven-plugin-api" [ label = "3.0.4", length = 58.95879734614027 ];
+	"org.apache.commons
+commons-weaver-maven-plugin" -> "org.apache.commons
+commons-weaver-processor" [ label = "1.1", length = 60.39720770839918 ];
+	"org.apache.commons
+commons-weaver-maven-plugin" -> "org.apache.maven
+maven-core" [ label = "3.0.4", length = 58.95879734614027 ];
+}

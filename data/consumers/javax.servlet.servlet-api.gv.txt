@@ -1,0 +1,13 @@
+digraph "javax.servlet
+servlet-api" {
+	size="8,5"
+	node [shape = box, color = tomato]; "javax.servlet
+servlet-api";
+	node [shape = box];
+	"org.apache.commons
+commons-jcs-core" -> "javax.servlet
+servlet-api" [ label = "2.5" ];
+	"org.apache.commons
+commons-jci-examples" -> "javax.servlet
+servlet-api" [ label = "2.4" ];
+}

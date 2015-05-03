@@ -1,0 +1,16 @@
+digraph "org.apache.maven.scm
+maven-scm-provider-svnexe" {
+	size="8,5"
+	node [shape = box, color = tomato]; "org.apache.maven.scm
+maven-scm-provider-svnexe";
+	node [shape = box];
+	"org.apache.commons
+commons-vfs2-project" -> "org.apache.maven.scm
+maven-scm-provider-svnexe" [ label = "1.4" ];
+	"org.apache.commons
+commons-vfs2" -> "org.apache.maven.scm
+maven-scm-provider-svnexe" [ label = "1.4" ];
+	"org.apache.commons
+commons-vfs2-examples" -> "org.apache.maven.scm
+maven-scm-provider-svnexe" [ label = "1.4" ];
+}

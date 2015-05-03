@@ -1,0 +1,13 @@
+digraph "org.apache.commons
+commons-jci-rhino" {
+	size="8,5"
+	node [shape = box, color = tomato]; "org.apache.commons
+commons-jci-rhino";
+	node [shape = box];
+	"org.apache.commons
+commons-jci-rhino" -> "org.apache.commons
+commons-jci-core" [ label = "1.1", length = 61.989476363991855 ];
+	"org.apache.commons
+commons-jci-rhino" -> "rhino
+js" [ label = "1.7R2", length = 55.49306144334055 ];
+}

@@ -1,0 +1,10 @@
+digraph "hsqldb
+hsqldb" {
+	size="8,5"
+	node [shape = box, color = tomato]; "hsqldb
+hsqldb";
+	node [shape = box];
+	"org.apache.commons
+commons-jcs-core" -> "hsqldb
+hsqldb" [ label = "1.8.0.10" ];
+}

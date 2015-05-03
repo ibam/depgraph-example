@@ -1,0 +1,134 @@
+
+<html>
+<head>
+  <title>Apache Commons Consumer Graph</title>
+
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/vis/3.11.0/vis.min.js"></script>
+
+  <style type="text/css">
+    p {
+      width: 600px;
+    }
+    html, body, select {
+      font: 11pt arial;
+    }
+    #mygraph {
+      width: 100%;
+      height: 100%;
+      border: 1px solid lightgray;
+    }
+  </style>
+</head>
+<body>
+
+<p>
+  Apache Commons Consumer Graph | <a href="index.html">Click here to switch to Dependency Graph</a> <br/><br/> <sub>Generated on Sunday, May 3rd 2015, 12:58 UTC+2</sub>
+</p>
+<p>
+  <label for="url">Select a project:</label>
+  <br/>
+  <select id="url" onchange="loadData()">
+                    <option value="data/consumers/ant.ant.gv.txt">ant.ant</option>
+                    <option value="data/consumers/aopalliance.aopalliance.gv.txt">aopalliance.aopalliance</option>
+                    <option value="data/consumers/axis.axis-jaxrpc.gv.txt">axis.axis-jaxrpc</option>
+                    <option value="data/consumers/burlap.burlap.gv.txt">burlap.burlap</option>
+                    <option value="data/consumers/cglib.cglib-nodep.gv.txt">cglib.cglib-nodep</option>
+                    <option value="data/consumers/cglib.cglib.gv.txt">cglib.cglib</option>
+                    <option value="data/consumers/com.jcraft.jsch.gv.txt">com.jcraft.jsch</option>
+                    <option value="data/consumers/commons-beanutils.commons-beanutils.gv.txt">commons-beanutils.commons-beanutils</option>
+                    <option value="data/consumers/commons-cli.commons-cli.gv.txt">commons-cli.commons-cli</option>
+                    <option value="data/consumers/commons-codec.commons-codec.gv.txt">commons-codec.commons-codec</option>
+                    <option value="data/consumers/commons-collections.commons-collections.gv.txt">commons-collections.commons-collections</option>
+                    <option value="data/consumers/commons-dbcp.commons-dbcp.gv.txt">commons-dbcp.commons-dbcp</option>
+                    <option value="data/consumers/commons-httpclient.commons-httpclient.gv.txt">commons-httpclient.commons-httpclient</option>
+                    <option value="data/consumers/commons-io.commons-io.gv.txt">commons-io.commons-io</option>
+                    <option value="data/consumers/commons-logging.commons-logging.gv.txt">commons-logging.commons-logging</option>
+                    <option value="data/consumers/commons-net.commons-net.gv.txt">commons-net.commons-net</option>
+                    <option value="data/consumers/commons-pool.commons-pool.gv.txt">commons-pool.commons-pool</option>
+                    <option value="data/consumers/concurrent.concurrent.gv.txt">concurrent.concurrent</option>
+                    <option value="data/consumers/hessian.hessian.gv.txt">hessian.hessian</option>
+                    <option value="data/consumers/hsqldb.hsqldb.gv.txt">hsqldb.hsqldb</option>
+                    <option value="data/consumers/javax.activation.activation.gv.txt">javax.activation.activation</option>
+                    <option value="data/consumers/javax.cache.app-domain.gv.txt">javax.cache.app-domain</option>
+                    <option value="data/consumers/javax.cache.cache-tests.gv.txt">javax.cache.cache-tests</option>
+                    <option value="data/consumers/javax.cache.test-domain.gv.txt">javax.cache.test-domain</option>
+                    <option value="data/consumers/javax.mail.mail.gv.txt">javax.mail.mail</option>
+                    <option value="data/consumers/javax.servlet.servlet-api.gv.txt">javax.servlet.servlet-api</option>
+                    <option value="data/consumers/javax.transaction.jta.gv.txt">javax.transaction.jta</option>
+                    <option value="data/consumers/jboss.javassist.gv.txt">jboss.javassist</option>
+                    <option value="data/consumers/junit.junit.gv.txt">junit.junit</option>
+                    <option value="data/consumers/org.apache.bsf.bsf-api.gv.txt">org.apache.bsf.bsf-api</option>
+                    <option value="data/consumers/org.apache.commons.commons-jci-core.gv.txt">org.apache.commons.commons-jci-core</option>
+                    <option value="data/consumers/org.apache.commons.commons-jci-eclipse.gv.txt">org.apache.commons.commons-jci-eclipse</option>
+                    <option value="data/consumers/org.apache.commons.commons-jci-fam.gv.txt">org.apache.commons.commons-jci-fam</option>
+                    <option value="data/consumers/org.apache.commons.commons-jcs-core.gv.txt">org.apache.commons.commons-jcs-core</option>
+                    <option value="data/consumers/org.apache.commons.commons-jcs-jcache-extras.gv.txt">org.apache.commons.commons-jcs-jcache-extras</option>
+                    <option value="data/consumers/org.apache.commons.commons-jcs-jcache-openjpa.gv.txt">org.apache.commons.commons-jcs-jcache-openjpa</option>
+                    <option value="data/consumers/org.apache.commons.commons-jcs-jcache-tck.gv.txt">org.apache.commons.commons-jcs-jcache-tck</option>
+                    <option value="data/consumers/org.apache.commons.commons-jcs-jcache.gv.txt">org.apache.commons.commons-jcs-jcache</option>
+                    <option value="data/consumers/org.apache.commons.commons-lang3.gv.txt">org.apache.commons.commons-lang3</option>
+                    <option value="data/consumers/org.apache.commons.commons-pool2.gv.txt">org.apache.commons.commons-pool2</option>
+                    <option value="data/consumers/org.apache.commons.commons-vfs2.gv.txt">org.apache.commons.commons-vfs2</option>
+                    <option value="data/consumers/org.apache.commons.commons-weaver-privilizer-api.gv.txt">org.apache.commons.commons-weaver-privilizer-api</option>
+                    <option value="data/consumers/org.apache.commons.commons-weaver-processor.gv.txt">org.apache.commons.commons-weaver-processor</option>
+                    <option value="data/consumers/org.apache.geronimo.specs.geronimo-atinject_1.0_spec.gv.txt">org.apache.geronimo.specs.geronimo-atinject_1.0_spec</option>
+                    <option value="data/consumers/org.apache.geronimo.specs.geronimo-interceptor_1.1_spec.gv.txt">org.apache.geronimo.specs.geronimo-interceptor_1.1_spec</option>
+                    <option value="data/consumers/org.apache.geronimo.specs.geronimo-jcache_1.0_spec.gv.txt">org.apache.geronimo.specs.geronimo-jcache_1.0_spec</option>
+                    <option value="data/consumers/org.apache.geronimo.specs.geronimo-jcdi_1.0_spec.gv.txt">org.apache.geronimo.specs.geronimo-jcdi_1.0_spec</option>
+                    <option value="data/consumers/org.apache.geronimo.specs.geronimo-jpa_2.0_spec.gv.txt">org.apache.geronimo.specs.geronimo-jpa_2.0_spec</option>
+                    <option value="data/consumers/org.apache.geronimo.specs.geronimo-jta_1.1_spec.gv.txt">org.apache.geronimo.specs.geronimo-jta_1.1_spec</option>
+                    <option value="data/consumers/org.apache.geronimo.specs.geronimo-servlet_3.0_spec.gv.txt">org.apache.geronimo.specs.geronimo-servlet_3.0_spec</option>
+                    <option value="data/consumers/org.apache.jackrabbit.jackrabbit-webdav.gv.txt">org.apache.jackrabbit.jackrabbit-webdav</option>
+                    <option value="data/consumers/org.apache.maven.maven-core.gv.txt">org.apache.maven.maven-core</option>
+                    <option value="data/consumers/org.apache.maven.maven-plugin-api.gv.txt">org.apache.maven.maven-plugin-api</option>
+                    <option value="data/consumers/org.apache.maven.maven-script-ant.gv.txt">org.apache.maven.maven-script-ant</option>
+                    <option value="data/consumers/org.apache.maven.plugin-tools.maven-plugin-annotations.gv.txt">org.apache.maven.plugin-tools.maven-plugin-annotations</option>
+                    <option value="data/consumers/org.apache.maven.scm.maven-scm-api.gv.txt">org.apache.maven.scm.maven-scm-api</option>
+                    <option value="data/consumers/org.apache.maven.scm.maven-scm-provider-svnexe.gv.txt">org.apache.maven.scm.maven-scm-provider-svnexe</option>
+                    <option value="data/consumers/org.apache.openjpa.openjpa.gv.txt">org.apache.openjpa.openjpa</option>
+                    <option value="data/consumers/org.apache.openwebbeans.openwebbeans-impl.gv.txt">org.apache.openwebbeans.openwebbeans-impl</option>
+                    <option value="data/consumers/org.apache.velocity.velocity-tools.gv.txt">org.apache.velocity.velocity-tools</option>
+                    <option value="data/consumers/org.apache.xbean.xbean-finder-shaded.gv.txt">org.apache.xbean.xbean-finder-shaded</option>
+                    <option value="data/consumers/org.codehaus.groovy.groovy-all.gv.txt">org.codehaus.groovy.groovy-all</option>
+                    <option value="data/consumers/org.codehaus.janino.janino.gv.txt">org.codehaus.janino.janino</option>
+                    <option value="data/consumers/org.codehaus.plexus.plexus-utils.gv.txt">org.codehaus.plexus.plexus-utils</option>
+                    <option value="data/consumers/org.eclipse.jdt.core.compiler.ecj.gv.txt">org.eclipse.jdt.core.compiler.ecj</option>
+                    <option value="data/consumers/org.jdom.jdom.gv.txt">org.jdom.jdom</option>
+                    <option value="data/consumers/org.ow2.asm.asm-util.gv.txt">org.ow2.asm.asm-util</option>
+                    <option value="data/consumers/org.tukaani.xz.gv.txt">org.tukaani.xz</option>
+                    <option value="data/consumers/org.vafer.dependency.gv.txt">org.vafer.dependency</option>
+                    <option value="data/consumers/rhino.js.gv.txt">rhino.js</option>
+                    <option value="data/consumers/xmlrpc.xmlrpc.gv.txt">xmlrpc.xmlrpc</option>
+          </select>
+</p>
+
+<div id="mygraph"></div>
+<script type="text/javascript">
+  var container = document.getElementById('mygraph');
+  var url = document.getElementById('url');
+  var network = new vis.Network(container,{},{physics:{barnesHut:{enabled:false}, repulsion:{nodeDistance: 300, centralGravity: 0.65, springLength: 100, damping: 0.4}}});
+
+  if (window.location.hash !== undefined) {
+    $('#url option:contains(' + window.location.hash.split('#')[1] + ')').prop('selected',true);
+  }
+
+  function loadData () {
+    $.ajax({
+      type: "GET",
+      url: url.value
+    }).done(function(data) {
+      network.setOptions({
+            stabilize: false
+          });
+      network.setData( {
+            dot: data
+          });
+        });
+
+    window.location.hash = $('#url option:selected').text();
+  }
+  loadData();
+</script>
+</body>
+</html>

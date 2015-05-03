@@ -1,0 +1,10 @@
+digraph "aopalliance
+aopalliance" {
+	size="8,5"
+	node [shape = box, color = tomato]; "aopalliance
+aopalliance";
+	node [shape = box];
+	"org.apache.commons
+commons-proxy" -> "aopalliance
+aopalliance" [ label = "1.0" ];
+}

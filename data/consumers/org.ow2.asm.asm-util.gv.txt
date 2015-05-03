@@ -1,0 +1,10 @@
+digraph "org.ow2.asm
+asm-util" {
+	size="8,5"
+	node [shape = box, color = tomato]; "org.ow2.asm
+asm-util";
+	node [shape = box];
+	"org.apache.commons
+commons-pool2" -> "org.ow2.asm
+asm-util" [ label = "5.0.3" ];
+}

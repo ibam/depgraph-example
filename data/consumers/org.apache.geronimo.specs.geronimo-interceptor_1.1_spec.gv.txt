@@ -1,0 +1,16 @@
+digraph "org.apache.geronimo.specs
+geronimo-interceptor_1.1_spec" {
+	size="8,5"
+	node [shape = box, color = tomato]; "org.apache.geronimo.specs
+geronimo-interceptor_1.1_spec";
+	node [shape = box];
+	"org.apache.commons
+commons-jcs-jcache" -> "org.apache.geronimo.specs
+geronimo-interceptor_1.1_spec" [ label = "1.0" ];
+	"org.apache.commons
+commons-jcs-jcache-extras" -> "org.apache.geronimo.specs
+geronimo-interceptor_1.1_spec" [ label = "1.0" ];
+	"org.apache.commons
+commons-jcs-jcache-tck" -> "org.apache.geronimo.specs
+geronimo-interceptor_1.1_spec" [ label = "1.0" ];
+}

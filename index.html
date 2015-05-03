@@ -1,1 +1,95 @@
-My Page
+
+<html>
+<head>
+  <title>Apache Commons Dependency Graph</title>
+
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/vis/3.11.0/vis.min.js"></script>
+
+  <style type="text/css">
+    p {
+      width: 600px;
+    }
+    html, body, select {
+      font: 11pt arial;
+    }
+    #mygraph {
+      width: 100%;
+      height: 100%;
+      border: 1px solid lightgray;
+    }
+  </style>
+</head>
+<body>
+
+<p>
+  Apache Commons Dependency Graph | <a href="consumer.html">Click here to switch to Consumer Graph</a> <br/><br/> <sub>Generated on Sunday, May 3rd 2015, 12:58 UTC+2</sub>
+</p>
+<p>
+  <label for="url">Select a project:</label>
+  <br/>
+  <select id="url" onchange="loadData()">
+                    <option value="data/dependents/global.gv.txt">global</option>
+                    <option value="data/dependents/org.apache.commons.commons-build-plugin.gv.txt">org.apache.commons.commons-build-plugin</option>
+                    <option value="data/dependents/org.apache.commons.commons-compress.gv.txt">org.apache.commons.commons-compress</option>
+                    <option value="data/dependents/org.apache.commons.commons-dbcp2.gv.txt">org.apache.commons.commons-dbcp2</option>
+                    <option value="data/dependents/org.apache.commons.commons-digester3.gv.txt">org.apache.commons.commons-digester3</option>
+                    <option value="data/dependents/org.apache.commons.commons-email.gv.txt">org.apache.commons.commons-email</option>
+                    <option value="data/dependents/org.apache.commons.commons-jci-core.gv.txt">org.apache.commons.commons-jci-core</option>
+                    <option value="data/dependents/org.apache.commons.commons-jci-eclipse.gv.txt">org.apache.commons.commons-jci-eclipse</option>
+                    <option value="data/dependents/org.apache.commons.commons-jci-examples.gv.txt">org.apache.commons.commons-jci-examples</option>
+                    <option value="data/dependents/org.apache.commons.commons-jci-fam.gv.txt">org.apache.commons.commons-jci-fam</option>
+                    <option value="data/dependents/org.apache.commons.commons-jci-groovy.gv.txt">org.apache.commons.commons-jci-groovy</option>
+                    <option value="data/dependents/org.apache.commons.commons-jci-janino.gv.txt">org.apache.commons.commons-jci-janino</option>
+                    <option value="data/dependents/org.apache.commons.commons-jci-javac.gv.txt">org.apache.commons.commons-jci-javac</option>
+                    <option value="data/dependents/org.apache.commons.commons-jci-rhino.gv.txt">org.apache.commons.commons-jci-rhino</option>
+                    <option value="data/dependents/org.apache.commons.commons-jcs-core.gv.txt">org.apache.commons.commons-jcs-core</option>
+                    <option value="data/dependents/org.apache.commons.commons-jcs-dist.gv.txt">org.apache.commons.commons-jcs-dist</option>
+                    <option value="data/dependents/org.apache.commons.commons-jcs-jcache-extras.gv.txt">org.apache.commons.commons-jcs-jcache-extras</option>
+                    <option value="data/dependents/org.apache.commons.commons-jcs-jcache-openjpa.gv.txt">org.apache.commons.commons-jcs-jcache-openjpa</option>
+                    <option value="data/dependents/org.apache.commons.commons-jcs-jcache-tck.gv.txt">org.apache.commons.commons-jcs-jcache-tck</option>
+                    <option value="data/dependents/org.apache.commons.commons-jcs-jcache.gv.txt">org.apache.commons.commons-jcs-jcache</option>
+                    <option value="data/dependents/org.apache.commons.commons-jexl.gv.txt">org.apache.commons.commons-jexl</option>
+                    <option value="data/dependents/org.apache.commons.commons-pool2.gv.txt">org.apache.commons.commons-pool2</option>
+                    <option value="data/dependents/org.apache.commons.commons-proxy.gv.txt">org.apache.commons.commons-proxy</option>
+                    <option value="data/dependents/org.apache.commons.commons-vfs2-examples.gv.txt">org.apache.commons.commons-vfs2-examples</option>
+                    <option value="data/dependents/org.apache.commons.commons-vfs2-project.gv.txt">org.apache.commons.commons-vfs2-project</option>
+                    <option value="data/dependents/org.apache.commons.commons-vfs2.gv.txt">org.apache.commons.commons-vfs2</option>
+                    <option value="data/dependents/org.apache.commons.commons-weaver-antlib-test.gv.txt">org.apache.commons.commons-weaver-antlib-test</option>
+                    <option value="data/dependents/org.apache.commons.commons-weaver-example.gv.txt">org.apache.commons.commons-weaver-example</option>
+                    <option value="data/dependents/org.apache.commons.commons-weaver-maven-plugin.gv.txt">org.apache.commons.commons-weaver-maven-plugin</option>
+                    <option value="data/dependents/org.apache.commons.commons-weaver-normalizer-example.gv.txt">org.apache.commons.commons-weaver-normalizer-example</option>
+                    <option value="data/dependents/org.apache.commons.commons-weaver-privilizer.gv.txt">org.apache.commons.commons-weaver-privilizer</option>
+                    <option value="data/dependents/org.apache.commons.commons-weaver-processor.gv.txt">org.apache.commons.commons-weaver-processor</option>
+          </select>
+</p>
+
+<div id="mygraph"></div>
+<script type="text/javascript">
+  var container = document.getElementById('mygraph');
+  var url = document.getElementById('url');
+  var network = new vis.Network(container,{},{physics:{barnesHut:{enabled:false}, repulsion:{nodeDistance: 300, centralGravity: 0.65, springLength: 100, damping: 0.4}}});
+
+  if (window.location.hash !== undefined) {
+    $('#url option:contains(' + window.location.hash.split('#')[1] + ')').prop('selected',true);
+  }
+
+  function loadData () {
+    $.ajax({
+      type: "GET",
+      url: url.value
+    }).done(function(data) {
+      network.setOptions({
+            stabilize: false
+          });
+      network.setData( {
+            dot: data
+          });
+        });
+
+    window.location.hash = $('#url option:selected').text();
+  }
+  loadData();
+</script>
+</body>
+</html>

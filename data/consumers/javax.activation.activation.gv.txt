@@ -1,0 +1,10 @@
+digraph "javax.activation
+activation" {
+	size="8,5"
+	node [shape = box, color = tomato]; "javax.activation
+activation";
+	node [shape = box];
+	"org.apache.commons
+commons-email" -> "javax.activation
+activation" [ label = "1.1.1" ];
+}

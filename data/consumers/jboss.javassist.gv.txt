@@ -1,0 +1,10 @@
+digraph "jboss
+javassist" {
+	size="8,5"
+	node [shape = box, color = tomato]; "jboss
+javassist";
+	node [shape = box];
+	"org.apache.commons
+commons-proxy" -> "jboss
+javassist" [ label = "3.0" ];
+}

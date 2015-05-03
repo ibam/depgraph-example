@@ -1,0 +1,13 @@
+digraph "org.apache.commons
+commons-jci-janino" {
+	size="8,5"
+	node [shape = box, color = tomato]; "org.apache.commons
+commons-jci-janino";
+	node [shape = box];
+	"org.apache.commons
+commons-jci-janino" -> "org.codehaus.janino
+janino" [ label = "2.6.1", length = 55.49306144334055 ];
+	"org.apache.commons
+commons-jci-janino" -> "org.apache.commons
+commons-jci-core" [ label = "1.1", length = 61.989476363991855 ];
+}

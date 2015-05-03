@@ -1,0 +1,10 @@
+digraph "ant
+ant" {
+	size="8,5"
+	node [shape = box, color = tomato]; "ant
+ant";
+	node [shape = box];
+	"org.apache.commons
+commons-vfs2" -> "ant
+ant" [ label = "1.6.2" ];
+}

@@ -1,0 +1,13 @@
+digraph "org.apache.openwebbeans
+openwebbeans-impl" {
+	size="8,5"
+	node [shape = box, color = tomato]; "org.apache.openwebbeans
+openwebbeans-impl";
+	node [shape = box];
+	"org.apache.commons
+commons-jcs-jcache-extras" -> "org.apache.openwebbeans
+openwebbeans-impl" [ label = "1.2.6" ];
+	"org.apache.commons
+commons-jcs-jcache-tck" -> "org.apache.openwebbeans
+openwebbeans-impl" [ label = "1.2.6" ];
+}

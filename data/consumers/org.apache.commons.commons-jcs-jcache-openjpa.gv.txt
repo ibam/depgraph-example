@@ -1,0 +1,10 @@
+digraph "org.apache.commons
+commons-jcs-jcache-openjpa" {
+	size="8,5"
+	node [shape = box, color = tomato]; "org.apache.commons
+commons-jcs-jcache-openjpa";
+	node [shape = box];
+	"org.apache.commons
+commons-jcs-dist" -> "org.apache.commons
+commons-jcs-jcache-openjpa" [ label = "2.0-beta-1" ];
+}

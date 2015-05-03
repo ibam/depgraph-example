@@ -1,0 +1,22 @@
+digraph "org.apache.commons
+commons-jcs-dist" {
+	size="8,5"
+	node [shape = box, color = tomato]; "org.apache.commons
+commons-jcs-dist";
+	node [shape = box];
+	"org.apache.commons
+commons-jcs-dist" -> "org.apache.commons
+commons-jcs-jcache-tck" [ label = "2.0-beta-1", length = 64.16606672028108 ];
+	"org.apache.commons
+commons-jcs-dist" -> "org.apache.commons
+commons-jcs-jcache-openjpa" [ label = "2.0-beta-1", length = 60.9861228866811 ];
+	"org.apache.commons
+commons-jcs-dist" -> "org.apache.commons
+commons-jcs-core" [ label = "2.0-beta-1", length = 63.19528664807629 ];
+	"org.apache.commons
+commons-jcs-dist" -> "org.apache.commons
+commons-jcs-jcache" [ label = "2.0-beta-1", length = 62.42453324894 ];
+	"org.apache.commons
+commons-jcs-dist" -> "org.apache.commons
+commons-jcs-jcache-extras" [ label = "2.0-beta-1", length = 62.82474678730768 ];
+}

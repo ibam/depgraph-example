@@ -1,0 +1,10 @@
+digraph "org.apache.maven.plugin-tools
+maven-plugin-annotations" {
+	size="8,5"
+	node [shape = box, color = tomato]; "org.apache.maven.plugin-tools
+maven-plugin-annotations";
+	node [shape = box];
+	"org.apache.commons
+commons-weaver-maven-plugin" -> "org.apache.maven.plugin-tools
+maven-plugin-annotations" [ label = "3.1" ];
+}

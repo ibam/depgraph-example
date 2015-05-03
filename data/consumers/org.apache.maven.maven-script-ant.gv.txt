@@ -1,0 +1,10 @@
+digraph "org.apache.maven
+maven-script-ant" {
+	size="8,5"
+	node [shape = box, color = tomato]; "org.apache.maven
+maven-script-ant";
+	node [shape = box];
+	"org.apache.commons
+commons-build-plugin" -> "org.apache.maven
+maven-script-ant" [ label = "2.2.1" ];
+}

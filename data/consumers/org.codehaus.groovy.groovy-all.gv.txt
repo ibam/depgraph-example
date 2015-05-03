@@ -1,0 +1,10 @@
+digraph "org.codehaus.groovy
+groovy-all" {
+	size="8,5"
+	node [shape = box, color = tomato]; "org.codehaus.groovy
+groovy-all";
+	node [shape = box];
+	"org.apache.commons
+commons-jci-groovy" -> "org.codehaus.groovy
+groovy-all" [ label = "1.7.11" ];
+}

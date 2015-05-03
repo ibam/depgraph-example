@@ -1,0 +1,10 @@
+digraph "hessian
+hessian" {
+	size="8,5"
+	node [shape = box, color = tomato]; "hessian
+hessian";
+	node [shape = box];
+	"org.apache.commons
+commons-proxy" -> "hessian
+hessian" [ label = "3.0.1" ];
+}

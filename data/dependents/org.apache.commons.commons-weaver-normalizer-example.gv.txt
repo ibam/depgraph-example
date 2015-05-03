@@ -1,0 +1,10 @@
+digraph "org.apache.commons
+commons-weaver-normalizer-example" {
+	size="8,5"
+	node [shape = box, color = tomato]; "org.apache.commons
+commons-weaver-normalizer-example";
+	node [shape = box];
+	"org.apache.commons
+commons-weaver-normalizer-example" -> "org.apache.commons
+commons-lang3" [ label = "3.2.1", length = 58.0471895621705 ];
+}

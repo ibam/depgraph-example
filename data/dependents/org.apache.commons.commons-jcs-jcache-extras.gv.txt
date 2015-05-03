@@ -1,0 +1,28 @@
+digraph "org.apache.commons
+commons-jcs-jcache-extras" {
+	size="8,5"
+	node [shape = box, color = tomato]; "org.apache.commons
+commons-jcs-jcache-extras";
+	node [shape = box];
+	"org.apache.commons
+commons-jcs-jcache-extras" -> "org.apache.openwebbeans
+openwebbeans-impl" [ label = "1.2.6", length = 61.51292546497023 ];
+	"org.apache.commons
+commons-jcs-jcache-extras" -> "org.apache.geronimo.specs
+geronimo-jcdi_1.0_spec" [ label = "1.0", length = 61.989476363991855 ];
+	"org.apache.commons
+commons-jcs-jcache-extras" -> "junit
+junit" [ label = "4.11", length = 60.9861228866811 ];
+	"org.apache.commons
+commons-jcs-jcache-extras" -> "org.apache.geronimo.specs
+geronimo-jcache_1.0_spec" [ label = "1.0-alpha-1", length = 62.42453324894 ];
+	"org.apache.commons
+commons-jcs-jcache-extras" -> "org.apache.geronimo.specs
+geronimo-atinject_1.0_spec" [ label = "1.0", length = 61.989476363991855 ];
+	"org.apache.commons
+commons-jcs-jcache-extras" -> "org.apache.geronimo.specs
+geronimo-interceptor_1.1_spec" [ label = "1.0", length = 61.989476363991855 ];
+	"org.apache.commons
+commons-jcs-jcache-extras" -> "org.apache.geronimo.specs
+geronimo-servlet_3.0_spec" [ label = "1.0", length = 60.9861228866811 ];
+}

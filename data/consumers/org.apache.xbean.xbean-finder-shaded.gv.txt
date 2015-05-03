@@ -1,0 +1,10 @@
+digraph "org.apache.xbean
+xbean-finder-shaded" {
+	size="8,5"
+	node [shape = box, color = tomato]; "org.apache.xbean
+xbean-finder-shaded";
+	node [shape = box];
+	"org.apache.commons
+commons-weaver-processor" -> "org.apache.xbean
+xbean-finder-shaded" [ label = "3.18" ];
+}

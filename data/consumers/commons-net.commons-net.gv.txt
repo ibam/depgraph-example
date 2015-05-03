@@ -1,0 +1,13 @@
+digraph "commons-net
+commons-net" {
+	size="8,5"
+	node [shape = box, color = tomato]; "commons-net
+commons-net";
+	node [shape = box];
+	"org.apache.commons
+commons-vfs2" -> "commons-net
+commons-net" [ label = "2.2" ];
+	"org.apache.commons
+commons-vfs2-examples" -> "commons-net
+commons-net" [ label = "2.2" ];
+}

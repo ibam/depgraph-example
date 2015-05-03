@@ -1,0 +1,10 @@
+digraph "burlap
+burlap" {
+	size="8,5"
+	node [shape = box, color = tomato]; "burlap
+burlap";
+	node [shape = box];
+	"org.apache.commons
+commons-proxy" -> "burlap
+burlap" [ label = "2.1.7" ];
+}

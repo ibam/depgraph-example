@@ -1,0 +1,13 @@
+digraph "org.apache.commons
+commons-jci-groovy" {
+	size="8,5"
+	node [shape = box, color = tomato]; "org.apache.commons
+commons-jci-groovy";
+	node [shape = box];
+	"org.apache.commons
+commons-jci-groovy" -> "org.apache.commons
+commons-jci-core" [ label = "1.1", length = 61.989476363991855 ];
+	"org.apache.commons
+commons-jci-groovy" -> "org.codehaus.groovy
+groovy-all" [ label = "1.7.11", length = 55.49306144334055 ];
+}

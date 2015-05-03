@@ -1,0 +1,10 @@
+digraph "commons-io
+commons-io" {
+	size="8,5"
+	node [shape = box, color = tomato]; "commons-io
+commons-io";
+	node [shape = box];
+	"org.apache.commons
+commons-jci-core" -> "commons-io
+commons-io" [ label = "2.2" ];
+}

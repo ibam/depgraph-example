@@ -1,0 +1,10 @@
+digraph "org.apache.openjpa
+openjpa" {
+	size="8,5"
+	node [shape = box, color = tomato]; "org.apache.openjpa
+openjpa";
+	node [shape = box];
+	"org.apache.commons
+commons-jcs-jcache-openjpa" -> "org.apache.openjpa
+openjpa" [ label = "2.3.0" ];
+}

@@ -1,0 +1,13 @@
+digraph "org.apache.commons
+commons-jci-eclipse" {
+	size="8,5"
+	node [shape = box, color = tomato]; "org.apache.commons
+commons-jci-eclipse";
+	node [shape = box];
+	"org.apache.commons
+commons-jci-eclipse" -> "org.apache.commons
+commons-jci-core" [ label = "1.1", length = 62.42453324894 ];
+	"org.apache.commons
+commons-jci-eclipse" -> "org.eclipse.jdt.core.compiler
+ecj" [ label = "4.2.2", length = 56.93147180559945 ];
+}

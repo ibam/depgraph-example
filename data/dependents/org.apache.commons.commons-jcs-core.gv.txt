@@ -1,0 +1,28 @@
+digraph "org.apache.commons
+commons-jcs-core" {
+	size="8,5"
+	node [shape = box, color = tomato]; "org.apache.commons
+commons-jcs-core";
+	node [shape = box];
+	"org.apache.commons
+commons-jcs-core" -> "hsqldb
+hsqldb" [ label = "1.8.0.10", length = 61.51292546497023 ];
+	"org.apache.commons
+commons-jcs-core" -> "commons-dbcp
+commons-dbcp" [ label = "1.4", length = 61.51292546497023 ];
+	"org.apache.commons
+commons-jcs-core" -> "commons-httpclient
+commons-httpclient" [ label = "3.1", length = 62.42453324894 ];
+	"org.apache.commons
+commons-jcs-core" -> "org.apache.velocity
+velocity-tools" [ label = "2.0", length = 61.51292546497023 ];
+	"org.apache.commons
+commons-jcs-core" -> "commons-logging
+commons-logging" [ label = "1.2", length = 64.16606672028108 ];
+	"org.apache.commons
+commons-jcs-core" -> "commons-pool
+commons-pool" [ label = "1.6", length = 61.51292546497023 ];
+	"org.apache.commons
+commons-jcs-core" -> "javax.servlet
+servlet-api" [ label = "2.5", length = 61.989476363991855 ];
+}
